@@ -5,6 +5,10 @@ class PlacesController < ApplicationController
     redirect_to dashboard_path
   end
   
+  def show
+    @place = Place.find(params[:id])
+  end
+  
   private
   def place_params
     params.require(:place).permit(:address, :description, :eta, :rent_per_month, :bedrooms, :available, :additional, :student)
