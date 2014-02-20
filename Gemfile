@@ -23,4 +23,5 @@ end
 
 gem 'rspec-rails'
 gem "monban"
-
+gem 'carrierwave'
+gem 'rmagick', '2.13.2'
