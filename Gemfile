@@ -23,5 +23,4 @@ end
 
 gem 'rspec-rails'
 gem "monban"
-gem "paperclip"
 
