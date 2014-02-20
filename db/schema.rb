@@ -11,7 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140220015346) do
+ActiveRecord::Schema.define(version: 20140220023224) do
+
+  create_table "places", force: true do |t|
+    t.string   "address"
+    t.string   "description"
+    t.decimal  "eta"
+    t.integer  "rent_per_month"
+    t.integer  "bedrooms"
+    t.date     "available"
+    t.text     "additional"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "student"
+  end
+
+  add_index "places", ["user_id"], name: "index_places_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "email"

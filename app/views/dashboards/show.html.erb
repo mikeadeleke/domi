@@ -1,1 +1,37 @@
-<h1>YO!</h1>
+<%= form_for :place do |f| %>
+  <div>
+    <%= f.label :address %><br>
+    <%= f.text_field :address %><br>
+  </div>
+  <div>
+    <%= f.label :description %><br>
+    <%= f.text_field :description %><br>
+  </div>
+  <div>
+    <%= f.label :eta_in_minutes %><br>
+    <%= f.number_field :eta %><br>
+  </div>
+  <div>
+    <%= f.label :rent_per_month %><br>
+    <%= f.number_field :rent_per_month %><br>
+  </div>
+  <div>
+    <%= f.label :bedrooms %><br>
+    <%= f.text_field :bedrooms %><br>
+  </div>
+  <div>
+    <%= f.label :available %><br>
+    <%= f.date_select :available %><br>
+  </div>
+  <div>
+    <%= f.label :student %><br>
+    <%= f.check_box :student %><br>
+  </div>
+  <div>
+    <%= f.label :additonal %><br>
+    <%= f.text_field :additonal %><br>
+  </div>
+  <div>
+    <%= f.submit "Add your place!" %>
+  </div>
+<% end %>
