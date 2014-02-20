@@ -1,5 +1,6 @@
-<div class="singin">
-  <%= form_for :session, url: session_path do |form| %>
+<div class="background">
+  <fieldset>
+    <%= form_for :session, url: session_path do |form| %>
     <div>
       <%= form.label :email %>
       <%= form.email_field :email %>
@@ -11,5 +12,6 @@
     <div>
       <%= form.submit "Sign in" %>
     </div>
-  <% end %>
+    <% end %>
+  </fieldset>
 </div>
