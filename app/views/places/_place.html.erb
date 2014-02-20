@@ -1,12 +1,11 @@
-<%= div_for @places do %>
-  <%= place.user.name %>
-  <%= link_to place.address, place_path %>
-  <%= place.address %>
-  <%= place.description %>
-  <%= place.eta %>
-  <%= place.rent_per_month %>
-  <%= place.bedrooms %>
-  <%= place.available %>
-  <%= place.additional %>
-  <%= place.student %>
+<%= div_for @place do %>
+  <%= @place.user %>
+  <%= @place.address %>
+  <%= @place.description %>
+  <%= @place.eta %>
+  <%= @place.rent_per_month %>
+  <%= @place.bedrooms %>
+  <%= @place.available %>
+  <%= @place.additional %>
+  <%= @place.student %>
 <% end %>

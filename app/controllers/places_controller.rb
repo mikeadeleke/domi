@@ -1,8 +1,12 @@
 class PlacesController < ApplicationController
   def create
     place = current_user.places.build(place_params)
-    place.save
-    redirect_to dashboard_path
+    if place.save
+      redirect_to dashboard_path
+    else
+      flash.alert = "Could not add your place."
+      redirect_to dashboard_path
+    end
   end
   
   def show

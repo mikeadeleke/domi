@@ -1,6 +1,11 @@
 class UsersController < ApplicationController
   respond_to :html
 
+  def show
+    @user = User.find(params[:id])
+    @places = @user.places
+  end
+  
   def new
     @user = User.new
   end
