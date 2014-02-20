@@ -5,14 +5,14 @@
     </div> 
     <div class="place">
       <%= div_for @place do %>
-        <%= @place.address %><br>
-        <%= @place.description %><br>
-        <%= @place.eta %><br>
-        <%= @place.rent_per_month %><br>
-        <%= @place.bedrooms %><br>
-        <%= @place.available %><br>
-        <%= @place.additional %><br>
-        <%= @place.student %><br>
+        <p>Address: <%= @place.address %></p>
+        <p>Description: <%= @place.description %></p>
+        <p>Estimated time to Drexel: <%= @place.eta %></p>
+        <p>Rent Per Month: <%= @place.rent_per_month %></p>
+        <p>Number of Bedrooms: <%= @place.bedrooms %></p>
+        <p>Avaiable starting: <%= @place.available %></p>
+        <p>Additonal: <%= @place.additional %></p>
+        <p>Only for Students? <%= @place.student %></p>
       <% end %>
     </div>
   </div>
