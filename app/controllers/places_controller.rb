@@ -1,4 +1,8 @@
 class PlacesController < ApplicationController
+  def new 
+    @place = Place.new
+  end
+  
   def create
     place = current_user.places.build(place_params)
     if place.save

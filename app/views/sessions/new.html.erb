@@ -1,16 +1,16 @@
 <div class="background">
   <fieldset>
     <%= form_for :session, url: session_path do |form| %>
-    <div>
+    <div class="fields">
       <%= form.label :email %>
-      <%= form.email_field :email %>
+      <%= form.email_field :email %><br>
     </div>
-    <div>
+    <div class="fields">
       <%= form.label :password %>
-      <%= form.password_field :password %>
+      <%= form.password_field :password %><br>
     </div>
-    <div>
-      <%= form.submit "Sign in" %>
+    <div class="fields">
+      <p><%= form.submit "Sign in", :id => "button" %></p>
     </div>
     <% end %>
   </fieldset>
