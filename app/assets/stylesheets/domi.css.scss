@@ -55,6 +55,7 @@ table {
 .nav {
 	background-color: white;
 	padding: 10px 10px;
+  border-bottom: 3px solid #025488;
 }
 
 .nav li {
@@ -173,7 +174,7 @@ table {
 
 /* Sign in */
 
-body {
+.background {
   background-color: #025488;
 }
 
@@ -206,3 +207,9 @@ fieldset {
 }
 
 /* end of signin */
+
+/* places */
+
+
+
+/* end of places */

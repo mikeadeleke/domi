@@ -1,11 +1,27 @@
-<%= div_for @place do %>
-  <%= @place.user %>
-  <%= @place.address %>
-  <%= @place.description %>
-  <%= @place.eta %>
-  <%= @place.rent_per_month %>
-  <%= @place.bedrooms %>
-  <%= @place.available %>
-  <%= @place.additional %>
-  <%= @place.student %>
-<% end %>
+<div class="place-container">
+  <div class="place-main">
+    <div class="photo-gallery">
+      Show photos
+    </div> 
+    <div class="place">
+      <%= div_for @place do %>
+        <%= @place.address %><br>
+        <%= @place.description %><br>
+        <%= @place.eta %><br>
+        <%= @place.rent_per_month %><br>
+        <%= @place.bedrooms %><br>
+        <%= @place.available %><br>
+        <%= @place.additional %><br>
+        <%= @place.student %><br>
+      <% end %>
+    </div>
+  </div>
+  <div class="place-side">
+    <div class="map">
+      Pull google maps in
+    </div> 
+    <div class="landlord">
+      Show landlord info
+    </div> 
+  </div>
+</div>
