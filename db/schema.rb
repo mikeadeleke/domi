@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140220023224) do
+ActiveRecord::Schema.define(version: 20140221181053) do
 
   create_table "places", force: true do |t|
     t.string   "address"
@@ -25,6 +25,13 @@ ActiveRecord::Schema.define(version: 20140220023224) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "student"
+    t.string   "photo"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.integer  "max_ammount_per_month"
+    t.integer  "credit_score"
+    t.string   "grade"
+    t.integer  "max_amount_per_month"
   end
 
   add_index "places", ["user_id"], name: "index_places_on_user_id"

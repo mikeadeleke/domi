@@ -1,6 +1,6 @@
 <div class="nav">
   <% if signed_in? %>
-  <li><%= image_tag("domiapp1.png", :alt => "Domi", :id => "logo") %></li>
+  <p><%= link_to(image_tag("domiapp1.png", :alt => "Domi", :id => "logo"), root_path) %></p>
   <li><%= link_to "Signout", session_path, method: :delete %></li>
   <li><%= link_to current_user.name, dashboard_path %></li>
   <% end %>

@@ -5,5 +5,6 @@ class DashboardsController < ApplicationController
   end
   
   def new
+    @place = Place.new
   end
 end
