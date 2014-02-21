@@ -3,4 +3,7 @@ class DashboardsController < ApplicationController
     @place = Place.new
     @places = current_user.places
   end
+  
+  def new
+  end
 end
