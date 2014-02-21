@@ -1,6 +1,6 @@
 <ul class="place">
   <% @places.each do |place| %>
-    <li><%= place.photo %></li>
+    <li><%= image_tag place.photo_url.to_s %></li>
     <li><%= place.address %></li>
     <li><%= place.description %></li>
     <li><%= place.eta %></li>

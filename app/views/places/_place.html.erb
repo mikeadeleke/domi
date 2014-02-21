@@ -1,7 +1,7 @@
 <div class="place-container">
   <div class="place-main">
     <div class="photo-gallery">
-       <p><%= @place.photo %></p>
+      <p><%= image_tag @place.photo_url.to_s %></p>
     </div> 
     <div class="place">
       <ul>
