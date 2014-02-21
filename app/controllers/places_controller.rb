@@ -1,4 +1,8 @@
 class PlacesController < ApplicationController
+  def index
+    @places = Place.all
+  end
+  
   def new 
     @place = Place.new
   end
@@ -6,10 +10,10 @@ class PlacesController < ApplicationController
   def create
     place = current_user.places.build(place_params)
     if place.save
-      redirect_to dashboard_path
+      redirect_to places_path
     else
       flash.alert = "Could not add your place."
-      redirect_to dashboard_path
+      render :new
     end
   end
   
@@ -19,6 +23,6 @@ class PlacesController < ApplicationController
   
   private
   def place_params
-    params.require(:place).permit(:address, :description, :eta, :rent_per_month, :bedrooms, :available, :additional, :student, :image)
+    params.require(:place).permit(:address, :description, :eta, :rent_per_month, :bedrooms, :available, :additional, :student, :photo)
   end
 end
