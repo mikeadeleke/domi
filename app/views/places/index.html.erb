@@ -1,0 +1,13 @@
+<h1>All the Places</h1>
+<ul>
+  <% @places.each do |place| %>
+    <li><%= place.address %></li>
+    <li><%= place.description %></li>
+    <li><%= place.eta %></li>
+    <li><%= place.rent_per_month %></li>
+    <li><%= place.bedrooms %></li>
+    <li><%= place.available %></li>
+    <li><%= place.additional %></li>
+    <li><%= place.student %></li>
+  <% end %>
+</ul>

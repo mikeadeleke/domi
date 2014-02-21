@@ -1,6 +1,11 @@
 class PlacesController < ApplicationController
+  
+  def index
+    @places = Place.all
+  end
+  
   def new 
-    @place = Place.new
+    @place = Place..order.last(5)
   end
   
   def create

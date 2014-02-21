@@ -3,5 +3,5 @@ Domi::Application.routes.draw do
   resources :users, only: [:new, :create, :show, :index]
   resource :dashboard, only: [:show]
   root "homes#show", via: :get
-  resources :places, only: [:create, :show]
+  resources :places, only: [:create, :show, :index]
 end
