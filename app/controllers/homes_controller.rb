@@ -8,7 +8,7 @@ class HomesController < ApplicationController
   
   def check_logged_in_user
     if signed_in?
-      homes_path
+      redirect_to dashboard_path
     end
   end
   
