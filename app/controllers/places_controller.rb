@@ -1,7 +1,7 @@
 class PlacesController < ApplicationController
   
   def index
-    @places = Place.all
+    @places = Place.order("created_at DESC").limit(5)
   end
   
   def new 
