@@ -70,7 +70,6 @@ table {
 .nav li a {
 	color: #025488;
 	text-decoration: none;
-  float: right;
   padding-right: 10px;
   top: -35px;
   position: relative;
@@ -84,6 +83,13 @@ table {
 #logo {
   height: 50px;
   width: 140px;
+  padding-bottom: 10px;
+  position: relative;
+  top: -15px;
+}
+
+#right {
+  float: right;
 }
 
 
@@ -227,7 +233,7 @@ fieldset {
   border: 1px solid lightgray;
 }
 
-.place p {
+.place li {
   padding: 10px;
 }
 

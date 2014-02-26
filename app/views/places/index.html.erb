@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>All the Places</h1>
 <div class="place">
   <% @places.each do |place| %>
@@ -11,3 +12,18 @@
     <p>Only for Students? <%= place.student %></p>
   <% end %>
 </div>
+=======
+<ul class="place">
+  <% @places.each do |place| %>
+    <li><%= image_tag place.photo_url.to_s %></li>
+    <li><%= place.address %></li>
+    <li><%= place.description %></li>
+    <li><%= place.eta %></li>
+    <li><%= place.rent_per_month %></li>
+    <li><%= place.bedrooms %></li>
+    <li><%= place.available %></li>
+    <li><%= place.additional %></li>
+    <li><%= place.student %></li>
+  <% end %>
+</ul>
+>>>>>>> photos

@@ -1,19 +1,21 @@
 <div class="place-container">
   <div class="place-main">
     <div class="photo-gallery">
-      Show photos
+      <p><%= image_tag @place.photo_url.to_s %></p>
     </div> 
     <div class="place">
-      <%= div_for @place do %>
-        <p>Address: <%= @place.address %></p>
-        <p>Description: <%= @place.description %></p>
-        <p>Estimated time to Drexel: <%= @place.eta %></p>
-        <p>Rent Per Month: <%= @place.rent_per_month %></p>
-        <p>Number of Bedrooms: <%= @place.bedrooms %></p>
-        <p>Avaiable starting: <%= @place.available %></p>
-        <p>Additonal: <%= @place.additional %></p>
-        <p>Only for Students? <%= @place.student %></p>
+      <ul>
+        <%= div_for @place do %>
+          <li>Address: <%= @place.address %></li>
+          <li>Description: <%= @place.description %></li>
+          <li>Estimated time to Drexel: <%= @place.eta %></li>
+          <li>Rent Per Month: <%= @place.rent_per_month %></li>
+          <li>Number of Bedrooms: <%= @place.bedrooms %></li>
+          <li>Avaiable starting: <%= @place.available %></li>
+          <li>Additonal: <%= @place.additional %></li>
+          <li>Only for Students? <%= @place.student %></li>
       <% end %>
+      </ul>
     </div>
   </div>
   <div class="place-side">
