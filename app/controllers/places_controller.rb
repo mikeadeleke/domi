@@ -5,7 +5,7 @@ class PlacesController < ApplicationController
   end
   
   def new 
-    @place = Place..order.last(5)
+    @place = Place.new
   end
   
   def create
