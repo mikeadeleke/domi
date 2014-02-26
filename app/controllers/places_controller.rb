@@ -4,11 +4,11 @@ class PlacesController < ApplicationController
 =======
 >>>>>>> photos
   def index
-    @places = Place.all
+    @places = Place.order("created_at DESC").limit(5)
   end
   
   def new 
-    @place = Place..order.last(5)
+    @place = Place.new
   end
   
   def create

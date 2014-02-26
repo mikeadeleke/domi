@@ -1,4 +1,5 @@
 Domi::Application.routes.draw do
+  get "searches/show"
   resource :session, only: [:new, :create, :destroy]
   resources :users, only: [:new, :create, :show, :index]
   resource :dashboard, only: [:show, :new]
