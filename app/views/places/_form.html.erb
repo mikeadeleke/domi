@@ -1,41 +1,41 @@
 <%= form_for @place do |f| %>
   
   <div>
-    <%= f.file_field :image %>
+    <p><%= f.file_field :photo %></p>  
   </div>
   <div>
-    <%= f.label :address %><br>
-    <%= f.text_field :address %><br>
+    <p><%= f.label :address %></p>
+    <p><%= f.text_field :address %></p>
   </div>
   <div>
-    <%= f.label :description %><br>
-    <%= f.text_field :description %><br>
+    <p><%= f.label :description %></p>
+    <p><%= f.text_field :description %></p>
   </div>
   <div>
-    <%= f.label :eta_in_minutes %><br>
-    <%= f.number_field :eta %><br>
+    <p><%= f.label :eta_in_minutes %></p>
+    <p><%= f.number_field :eta %></p>
   </div>
   <div>
-    <%= f.label :rent_per_month %><br>
-    <%= f.number_field :rent_per_month %><br>
+    <p><%= f.label :rent_per_month %></p>
+    <p><%= f.number_field :rent_per_month %></p>
   </div>
   <div>
-    <%= f.label :bedrooms %><br>
-    <%= f.text_field :bedrooms %><br>
+    <p><%= f.label :bedrooms %></p>
+    <p><%= f.text_field :bedrooms %></p>
   </div>
   <div>
-    <%= f.label :available %><br>
-    <%= f.date_select :available %><br>
+    <p><%= f.label :available %></p>
+    <p><%= f.date_select :available %></p>
   </div>
   <div>
-    <%= f.label :student %><br>
-    <%= f.check_box :student %><br>
+    <p><%= f.label :student %></p>
+    <p><%= f.select :student, ["Yes", "No"] %></p>
   </div>
   <div>
-    <%= f.label :additional %><br>
-    <%= f.text_field :additional %><br>
+    <p><%= f.label :additional %></p>
+    <p><%= f.text_field :additional %></p>
   </div>
   <div>
-    <%= f.submit "Add your place!" %>
+    <p><%= f.submit "Yes!", :id => "button" %></p>
   </div>
 <% end %>
