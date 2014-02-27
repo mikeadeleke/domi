@@ -4,10 +4,7 @@ Domi::Application.routes.draw do
   resources :users, only: [:new, :create, :show, :index]
   resource :dashboard, only: [:show, :new]
   root "homes#show", via: :get
-<<<<<<< HEAD
   resource :homes, only: [:index, :show]
   resources :places, only: [:create, :show, :index]
-=======
   resources :places, only: [:create, :show, :index, :new]
->>>>>>> photos
 end
