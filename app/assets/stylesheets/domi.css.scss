@@ -54,7 +54,7 @@ table {
 
 .nav {
 	background-color: white;
-	padding: 10px 10px;
+	padding: 5px 10px 0;
   border-bottom: 3px solid #025488;
 }
 
@@ -71,7 +71,7 @@ table {
 	color: #025488;
 	text-decoration: none;
   padding-right: 10px;
-  top: 15px;
+  top: -35px;
   position: relative;
 }
 
@@ -79,10 +79,6 @@ table {
 	text-decoration: underline;
 }
 
-.nav image {
-  height: 50px;
-  width: 50px;
-}
 
 #logo {
   height: 50px;
@@ -95,6 +91,7 @@ table {
 #right {
   float: right;
 }
+
 
 /* end of header */
 
@@ -242,3 +239,39 @@ fieldset {
 
 
 /* end of places */
+
+/* dashboard */
+
+.profile {
+  margin: 20px auto;
+  border: 2px solid lightgray;
+  width: 600px;
+  height: 100%;
+}
+
+.profile p {
+  font-size: 22px;
+  font-family: Lucida Grande;
+  color: #025488;
+  padding: 7px;
+}
+
+.profile h1 {
+  font-size: 50px;
+  font-family: Lucida Grande;
+  color: #025488;
+  padding: 10px;
+}
+
+.profile h2 {
+  font-size: 20px;
+  font-family: Lucida Grande;
+  color: #025488;
+  padding: 10px;
+  line-height: 1.2em;
+}
+
+/* end of dashboard */
+
+
+

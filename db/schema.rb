@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20140221181053) do
+=======
 ActiveRecord::Schema.define(version: 20140220233109) do
+>>>>>>> photos
 
   create_table "places", force: true do |t|
     t.string   "address"
@@ -26,6 +30,15 @@ ActiveRecord::Schema.define(version: 20140220233109) do
     t.datetime "updated_at"
     t.boolean  "student"
     t.string   "photo"
+<<<<<<< HEAD
+    t.float    "latitude"
+    t.float    "longitude"
+    t.integer  "max_ammount_per_month"
+    t.integer  "credit_score"
+    t.string   "grade"
+    t.integer  "max_amount_per_month"
+=======
+>>>>>>> photos
   end
 
   add_index "places", ["user_id"], name: "index_places_on_user_id"

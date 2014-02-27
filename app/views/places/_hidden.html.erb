@@ -1,0 +1,17 @@
+<%= form_for @place do |f| %>
+  <div>
+    <p><%= f.label :credit_score %></p>
+    <p><%= f.text_field :credit_score %></p>
+  </div>
+  <div>
+    <p><%= f.label :grade %></p>
+    <p><%= f.text_field :grade %></p>
+  </div>
+  <div>
+    <p><%= f.label :max_amount_per_month %></p>
+    <p><%= f.number_field :max_amount_per_month %></p>
+  </div>
+  <div>
+    <p><%= f.submit "Your info", :id => "button" %></p>
+  </div>
+<% end %>
