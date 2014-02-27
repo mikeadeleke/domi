@@ -1,8 +1,4 @@
 class PlacesController < ApplicationController
-<<<<<<< HEAD
-  
-=======
->>>>>>> photos
   def index
     @places = Place.order("created_at DESC").limit(5)
   end
