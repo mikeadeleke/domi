@@ -1,8 +1,5 @@
 <div class="place-container">
   <div class="place-main">
-    <div class="photo-gallery">
-      <p><%= image_tag @place.photo_url.to_s %></p>
-    </div> 
     <div class="place">
       <ul>
         <%= div_for @place do %>
@@ -14,7 +11,7 @@
           <li>Avaiable starting: <%= @place.available %></li>
           <li>Additonal: <%= @place.additional %></li>
           <li>Only for Students? <%= @place.student %></li>
-      <% end %>
+        <% end %>
       </ul>
     </div>
   </div>

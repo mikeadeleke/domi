@@ -8,11 +8,13 @@ class PlacesController < ApplicationController
   end
   
   def create
-    place = current_user.places.build(place_params)
-    if place.save
+    @place = current_user.places.build(place_params)
+    if @place.save
       redirect_to places_path
     else
       flash.alert = "Could not add your place."
+      puts @error_messages = @place.errors.full_messages
+      puts "Ahoi"
       render :new
     end
   end

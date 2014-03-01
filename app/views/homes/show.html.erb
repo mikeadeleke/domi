@@ -1,4 +1,6 @@
 <% if signed_in? %>
+<%= render @places %>
+<% else %>
 <div class="container">
   <div id="sidebar">
     <%= image_tag("domiapp.png", :alt => "Domi") %>
@@ -11,4 +13,4 @@
     <h3>What We Do</h3>
   </div>
 </div>
-<% else %>
+<% end %>

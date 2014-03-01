@@ -1,5 +1,5 @@
 class AddStudentToPlaces < ActiveRecord::Migration
   def change
-    add_column :places, :student, :boolean
+    add_column :places, :student, :string
   end
 end

@@ -14,5 +14,5 @@ class Place < ActiveRecord::Base
   validates :student, presence: true
   
   belongs_to :user
-  mount_uploader :photo, PhotoUploader
+  
 end
